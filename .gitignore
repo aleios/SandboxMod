@@ -1,14 +1,37 @@
-.gradle
+#eclipse
+.project
+.classpath
+.settings/
+.metadata
+*.launch
+org.*
+bin
 build/
+eclipse/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+CREDITS-fml.txt
+LICENSE-fml.txt
+MinecraftForge-Credits.txt
+MinecraftForge-License.txt
+README.txt
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+#idea
+*.iml
+*.ipr
+*.iws
+.idea
+out
 
-# Cache of project
-.gradletasknamecache
+#gradle
+build
+.gradle
+modules
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+#runtime
+run
+run_server
+
+#mac
+.DS_Store
+
+
