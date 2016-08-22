@@ -26,6 +26,13 @@ out
 build
 .gradle
 modules
+gradlew.bat
+gradlew
+build.gradle
+gradle/
+
+# API
+src/api
 
 #runtime
 run
