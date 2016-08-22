@@ -3,6 +3,7 @@ package com.aleios.sandboxmod.reference;
 public class Reference 
 {
 	public static final String MOD_ID = "SandboxMod";
+	public static final String MOD_LOWER_ID = MOD_ID.toLowerCase();
 	public static final String MOD_NAME = "Sandbox Mod";
 	public static final String MOD_VERSION = "1.7.10-1.0";
 	public static final String MOD_FINGERPRINT = "@FINGERPRINT@";

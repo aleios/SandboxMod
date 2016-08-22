@@ -2,6 +2,7 @@ package com.aleios.sandboxmod;
 
 import com.aleios.sandboxmod.init.ModBlocks;
 import com.aleios.sandboxmod.init.ModTileEntities;
+import com.aleios.sandboxmod.network.NetworkHandler;
 import com.aleios.sandboxmod.proxy.CommonProxy;
 import com.aleios.sandboxmod.reference.Reference;
 import com.aleios.sandboxmod.utility.Log;
@@ -11,6 +12,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import net.minecraft.block.Block;
 
 @Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.MOD_VERSION)
@@ -36,6 +38,9 @@ public class SandboxMod
 		ModBlocks.init();
 		ModTileEntities.init();
 		proxy.preInit();
+		
+		NetworkHandler.init();
+		NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 		
 		Log.info("PreInitialization Complete");
 	}
