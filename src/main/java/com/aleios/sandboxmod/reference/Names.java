@@ -13,4 +13,9 @@ public class Names
 		public static final String TILE_IFINITEGENERATOR = Reference.MOD_ID + ":" + Blocks.BLOCK_INFINITEGENERATOR;
 		public static final String TILE_FISHERY = Reference.MOD_ID + ":" + Blocks.BLOCK_FISHERY;
 	}
+	
+	public class Items
+	{
+		public static final String ITEM_PORTABLECRAFTER = "PortableCrafter";
+	}
 }

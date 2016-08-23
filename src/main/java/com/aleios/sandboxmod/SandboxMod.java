@@ -1,6 +1,7 @@
 package com.aleios.sandboxmod;
 
 import com.aleios.sandboxmod.init.ModBlocks;
+import com.aleios.sandboxmod.init.ModItems;
 import com.aleios.sandboxmod.init.ModTileEntities;
 import com.aleios.sandboxmod.network.NetworkHandler;
 import com.aleios.sandboxmod.proxy.CommonProxy;
@@ -36,6 +37,7 @@ public class SandboxMod
 	{
 		// Config, networkhandlers, blocks, items init.
 		ModBlocks.init();
+		ModItems.init();
 		ModTileEntities.init();
 		proxy.preInit();
 		
