@@ -74,12 +74,16 @@ public class TileEntityFishery extends TileEntitySandboxMod implements IEnergyHa
 	public void writeToNBT(NBTTagCompound nbt) {
 		super.writeToNBT(nbt);
 		storage.writeToNBT(nbt);
+		
+		// TODO: Add code to store inventory contents
 	}
 	
 	@Override
 	public void readFromNBT(NBTTagCompound nbt) {
 		super.readFromNBT(nbt);
 		storage.readFromNBT(nbt);
+		
+		// TODO: Add code to read inventory contents.
 	}
 	
 	@Override
